@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.10'
+before_install:
+- curl -L https://raw.githubusercontent.com/arunoda/travis-ci-laika/master/configure.sh
+  | /bin/sh
+deploy:
+  provider: modulus
+  api_key:
+    secure: G22dT8tweB3EPwdgLPdZJr6hPVn//6U86LNgIr8x8g0iSb0EZZk/uFEc9XwZJFToJGFKj/zFXEY+YJk5lTLVD9vYNjzjpkxBIE7+usIHiHSNKiprDYdZvTpAitan2YfFXspadrwbDJoYLE615m/Asz9XAAtjQ7z61Xu3OUsnLR0=
+  project_name: Permeate
+  on: master
