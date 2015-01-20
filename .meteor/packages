@@ -10,3 +10,6 @@ nemo64:bootstrap
 less
 natestrauser:font-awesome
 meteorhacks:kadira
+ian:accounts-ui-bootstrap-3
+accounts-password
+iron:router
