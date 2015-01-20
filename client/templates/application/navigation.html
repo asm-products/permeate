@@ -1,0 +1,32 @@
+<template name="navigation">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://permeate.io">Permeate.io</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        {{#if currentUser}}
+        <ul class="nav navbar-nav">
+          <li class=""><a href="/">Home</a></li>
+          <li class=""><a href="{{pathFor currentUser.username 'conversationList'}}">Conversations</a></li>
+        </ul>
+        {{/if}}
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://assembly.com/permeate"><i class="fa fa-bolt fa-fw"></i> Introduce yourself on Assembly</a></li>
+        
+          {{> loginButtons}}
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+</template>
