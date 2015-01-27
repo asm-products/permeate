@@ -13,3 +13,10 @@ meteorhacks:kadira
 ian:accounts-ui-bootstrap-3
 accounts-password
 iron:router
+meteorhacks:npm
+
+
+npm-container
+aldeed:autoform
+aldeed:collection2
+peerlibrary:urlify2
