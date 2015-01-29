@@ -15,7 +15,7 @@
         {{#if currentUser}}
         <ul class="nav navbar-nav">
           <li class=""><a href="/">Home</a></li>
-          <li class=""><a href="{{pathFor 'conversationList' owner=currentUserSlug }}">Conversations</a></li>
+          <li class=""><a href="{{pathFor 'conversationList' owner=currentUser.profile.slug }}">Conversations</a></li>
         </ul>
         {{/if}}
 
