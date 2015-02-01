@@ -1,4 +1,4 @@
-Meteor.publish('conversationList', function(owner, options) {
+Meteor.publish('conversationsList', function(owner, options) {
   check(owner, String);
 
   check(options, {

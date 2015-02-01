@@ -1,7 +1,15 @@
 <template name="conversationsList">
   <div class="container">
-    <h1>Finally!</h1>
 
-    <a class="btn btn-primary" href="{{pathFor 'conversationsCreate' owner=currentUser.profile.slug}}">Create Conversation</a>
+    <h1>
+      Conversations!
+
+      <a class="btn btn-primary pull-right" href="{{pathFor 'conversationsCreate' owner=currentUser.profile.slug}}">Create Conversation</a>
+    </h1>
+
+    {{#each conversationsList}}
+      {{> conversationsListItem}}
+    {{/each}}
+
   </div>
 </template>
