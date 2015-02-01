@@ -1,7 +1,7 @@
 <template name="conversationsListItem">
   <div class="row">
     <div class="col-xs-12">
-      <h2>{{title}}</h2>
+      <h2><a href="{{pathFor 'conversationsItem' owner slug}}">{{title}}</a></h2>
     </div>
   </div>
 </template>
